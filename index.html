@@ -383,37 +383,39 @@
             </a>
         </section>
 
-        <!-- ================= MAIN SECTION 4: MEMBER REVIEWS (NOW AT THE BOTTOM) ================= -->
+               <!-- ================= MAIN SECTION 4: MEMBER REVIEWS ================= -->
         <section class="web-card" id="reviews">
             <h2>💬 Member Testimonies & Reviews</h2>
             <p style="font-size: 15px; color: #718096; margin-bottom: 25px;">
                 Read updates from our association members or share your own testimony below. All submissions are safely moderated by the church administration.
             </p>
 
-            <!-- Real-Time Disqus Comment Thread Container Block -->
+            <!-- The Real-Time Disqus Comment Thread Grid -->
             <div id="disqus_thread"></div>
             
             <script>
                 var disqus_config = function () {
-                    this.page.url = window.location.href;  // Automatically tracks your live website link
-                    this.page.identifier = 'gospel-disciples-welfare-v1'; // Unique ID for your church moderation database
+                    this.page.url = 'https://github.io'; // Locks your exact online URL link
+                    this.page.identifier = 'gospel_disciples_church_welfare_system_v1'; // Locks a unique database node ID
                 };
                 
-                (function() { // DON'T EDIT BELOW THIS LINE
+                (function() { 
                     var d = document, s = d.createElement('script');
+                    // This links directly to your official live shortname database pipeline channel
                     s.src = 'https://disqus.com';
                     s.setAttribute('data-timestamp', +new Date());
                     (d.head || d.body).appendChild(s);
                 })();
             </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com">comments powered by Disqus.</a></noscript>
+            <noscript>Please enable JavaScript to view the comments.</noscript>
         </section>
 
-        <!-- Breathing room at the absolute bottom -->
+        <!-- Dynamic bottom buffer margins -->
         <div style="height: 100px;"></div>
 
-    </div> <!-- Closes .web-layout -->
+    </div> <!-- Closes .web-layout wrapper -->
 
 </body>
 </html>
+
 
