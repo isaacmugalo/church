@@ -240,14 +240,17 @@
 </head>
 <body>
 
+     <!-- Updated Navigation Bar with Reviews Link -->
     <nav class="navbar">
         <a href="#" class="nav-logo">⛪ Gospel Disciples Church</a>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#schedule">Service Schedule</a></li>
             <li><a href="#welfare">Welfare Association</a></li>
+            <li><a href="#reviews">Member Reviews</a></li>
         </ul>
     </nav>
+
 
     <header class="hero-banner">
         <h1>Gospel Disciples Church</h1>
@@ -256,8 +259,11 @@
 
     <div class="web-layout">
         
+          <!-- ================= MAIN SECTION 1: CHURCH PROFILE ================= -->
         <section class="web-card">
             <h2>Our Ministry & Leadership</h2>
+            
+            <!-- Pastor Information Module Display Card -->
             <div class="pastor-top-profile">
                 <img src="pastor.jpg" alt="Senior Pastor Stanley Mugalo" class="pastor-img">
                 <div class="pastor-info-text">
@@ -269,10 +275,16 @@
                     <a href="tel:0703680570" class="call-link-btn">📞 Call: 0703680570</a>
                 </div>
             </div>
-            <p style="font-size: 16px; color: #4a5568; margin-top: 15px;">
-                📍 <strong>Physical Location:</strong> We are located in the <strong>Muslim area of Kawangware</strong>, Nairobi, Kenya. Our church gates are warmly open to all members of the community searching for a welcoming spiritual home.
+
+            <!-- Church Physical Address Details with Google Maps Trigger Link -->
+            <p style="font-size: 16px; color: #4a5568; margin-top: 15px; line-height: 1.8;">
+                📍 <strong>Physical Location:</strong> We are located in the 
+                <a href="https://share.google/lvrvceGJxLShaofhk" target="_blank" style="color: #3498db; text-decoration: underline; font-weight: bold; background-color: #e3f2fd; padding: 2px 6px; border-radius: 4px;">
+                    Muslim area of Kawangware
+                </a>, Nairobi, Kenya. Click the blue highlighted text above to open Google Maps and view our exact location pin or get driving directions!
             </p>
         </section>
+
         <section class="web-card" id="schedule">
             <h2>🗓️ Weekly Services & Fellowship Hours</h2>
             <p style="font-size: 15px; color: #718096; margin-top: -10px; margin-bottom: 20px;">Join us on our journey of faith across our structured weekly timetable programs:</p>
@@ -355,24 +367,53 @@
                 </div>
                 <div class="price-tag" style="border-left: 1px solid #fed7d7; padding-left: 20px;">
                     <h4>Monthly Contribution</h4>
-                    <p>Ksh 100 / mo</p>
+                    <p>Ksh 100 / month</p>
                 </div>
             </div>
         </section>
 
+        <!-- ================= MAIN SECTION 3: THE WHATSAPP GATE ================= -->
         <section class="whatsapp-section">
             <h3 style="margin: 0 0 10px 0; font-size: 20px; color: #1a252f;">Ready to Join the Association?</h3>
             <p style="font-size: 15px; color: #4a5568; margin-bottom: 15px;">
                 To secure our database, new members must first enter our communication group. The secret registration form link to trigger your automatic M-Pesa push is pinned directly inside the chat room description details!
             </p>
-            <a href="https://chat.whatsapp.com/CyO9wenhjMBGIPcstnxgyx" class="whatsapp-btn">
+            <a href="pay.html" class="whatsapp-btn">
                 Join Our WhatsApp Group
             </a>
         </section>
 
-        <div style="height: 400px;"></div>
+        <!-- ================= MAIN SECTION 4: MEMBER REVIEWS (NOW AT THE BOTTOM) ================= -->
+        <section class="web-card" id="reviews">
+            <h2>💬 Member Testimonies & Reviews</h2>
+            <p style="font-size: 15px; color: #718096; margin-bottom: 25px;">
+                Read updates from our association members or share your own testimony below. All submissions are safely moderated by the church administration.
+            </p>
 
-    </div>
+            <!-- Real-Time Disqus Comment Thread Container Block -->
+            <div id="disqus_thread"></div>
+            
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;  // Automatically tracks your live website link
+                    this.page.identifier = 'gospel-disciples-welfare-v1'; // Unique ID for your church moderation database
+                };
+                
+                (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://disqus.com';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com">comments powered by Disqus.</a></noscript>
+        </section>
+
+        <!-- Breathing room at the absolute bottom -->
+        <div style="height: 100px;"></div>
+
+    </div> <!-- Closes .web-layout -->
 
 </body>
 </html>
+
